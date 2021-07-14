@@ -200,7 +200,7 @@ footer img{
   Media Query style
 *\--------------------- */
 /* Mobile Device */
-@media (max-width:668px) {
+@media only screen and (max-width:668px) {
     main{
         align-items: center;
     }
@@ -231,7 +231,7 @@ footer img{
     }
 }
 /* tablet device */
-@media (max-width:992px) {
+@media only screen and (max-width:992px) {
     main{
         align-items: center;
     }
