@@ -1,0 +1,167 @@
+/*----------------------*\
+       common style
+*\--------------------- */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section {
+    display: block;
+    padding: 75px 0;
+}
+.container{
+    width: 1100px;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+    padding: 10px 20px;
+    font-size: small;
+}
+/*----------------------*\
+  top banner part style
+*\--------------------- */
+#topBanner{
+    background-color: #2D25A0;
+}
+.top-banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+.top-banner h1{
+    color: white;
+    font-size: 64px;
+}
+.top-banner img{
+    width:100%;
+}
+/* animation and transition transformation */
+/* @keyframes bouncer {
+    1%{
+        top: 170px;
+        right:485px;
+    }
+    5%{
+        top:160px;
+        right:495px;
+    }
+    10%{
+        top:160px;
+        right:485px;
+    }
+    20%{
+        top:150px;
+        right:495px;
+    }
+    30%{
+        top: 115px;
+        right:485px;
+    }
+    40%{
+        top:105px;
+        right:495px;
+    }
+    50%{
+        top:100px;
+        right: 505px;
+    }
+    60%{
+        top:100px;
+        right:515px;
+    }
+    70%{
+        top:100px;
+        right:525px;
+    }
+    80%{
+        top:105px;
+        right:535px;
+    }
+    90%{
+        top:110px;
+        right:545px;
+    }
+    100%{
+        top:115px;
+        right:555px;
+    }
+} */
+#player-kick{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 556px;
+    transform: rotate(-10deg);
+    transition: transform 1s;
+}
+.top-banner:hover #player-kick{
+    transform: rotate(20deg);
+    transition: rotate 5s;
+    transition: transform .3s ease-out;
+}
+#football{
+    position: absolute;
+    right: 475px;
+    top: 196px;
+    width: 70px;
+    transition: transform 1s ease-out;
+}
+.top-banner:hover #football{
+    transform: translate(-300px, -80px);
+    /* animation: bouncer 5s ease-out 0s 1 alternate;
+    animation-play-state: running; */
+}
+/*----------------------*\
+  players part style
+*\--------------------- */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    align-items: center;
+    margin: auto;
+}
+.player{
+    padding: 15px;
+    height: 475px;
+    width: 300px;
+    box-shadow: 10px 10px 50px lightgray;
+}
+.player img{
+    width:300px;
+}
+/*----------------------*\
+  footer part style
+*\--------------------- */
+footer{
+    padding: 55px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer img{
+    width: 480px;
+    height: 110px;
+}
+.social-icon{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.social-icon i{
+    padding: 7px;
+    margin: 0 5px;
+    font-size: 24px;
+    color: #969bab;
+    background-color: #e7e7e8;
+    border-radius: 25px;
+}
