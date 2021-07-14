@@ -209,6 +209,7 @@ footer img{
     }
     .top-banner, .players, .upcoming-match, .highlights{
         grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
     }
     #player-kick{
         width: 400px;
@@ -247,8 +248,10 @@ footer img{
     }
     .players{
         grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
     }
     .upcoming-match{
         grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
     }
 }
