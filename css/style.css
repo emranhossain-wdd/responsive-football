@@ -40,66 +40,18 @@ section {
     grid-template-columns: repeat(2, 1fr);
     margin: auto;
     align-items: center;
-    position: relative;
 }
 .top-banner h1{
     color: white;
     font-size: 64px;
 }
+.top-banner-img{
+    position: relative;
+}
 .top-banner img{
     width:100%;
 }
-/* animation and transition transformation */
-/* @keyframes bouncer {
-    1%{
-        top: 170px;
-        right:485px;
-    }
-    5%{
-        top:160px;
-        right:495px;
-    }
-    10%{
-        top:160px;
-        right:485px;
-    }
-    20%{
-        top:150px;
-        right:495px;
-    }
-    30%{
-        top: 115px;
-        right:485px;
-    }
-    40%{
-        top:105px;
-        right:495px;
-    }
-    50%{
-        top:100px;
-        right: 505px;
-    }
-    60%{
-        top:100px;
-        right:515px;
-    }
-    70%{
-        top:100px;
-        right:525px;
-    }
-    80%{
-        top:105px;
-        right:535px;
-    }
-    90%{
-        top:110px;
-        right:545px;
-    }
-    100%{
-        top:115px;
-        right:555px;
-    }
-} */
+/* transition transformation */
 #player-kick{
     position: absolute;
     right: 30px;
@@ -118,12 +70,10 @@ section {
     right: 475px;
     top: 196px;
     width: 70px;
-    transition: transform 1s ease-out;
+    transition: transform .5s ease-out;
 }
 .top-banner:hover #football{
     transform: translate(-300px, -80px);
-    /* animation: bouncer 5s ease-out 0s 1 alternate;
-    animation-play-state: running; */
 }
 /*----------------------*\
   players part style
@@ -245,4 +195,60 @@ footer img{
     color: #969bab;
     background-color: #e7e7e8;
     border-radius: 25px;
+}
+/*----------------------*\
+  Media Query style
+*\--------------------- */
+/* Mobile Device */
+@media (max-width:668px) {
+    main{
+        align-items: center;
+    }
+    .container{
+        width: 100%;
+    }
+    .top-banner, .players, .upcoming-match, .highlights{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #player-kick{
+        width: 400px;
+    }
+    #football{
+        width: 45px;
+        right: 355px;
+        top: 155px;
+    }
+    .images{
+        flex-direction: column;
+    }
+    .highlights img{
+        padding-top: 20px;
+    }
+    footer img{
+        width: 300px;
+        height: 90px;
+    }
+}
+/* tablet device */
+@media (max-width:992px) {
+    main{
+        align-items: center;
+    }
+    .container{
+        width: 100%;
+    }
+    #player-kick{
+        width: 400px;
+    }
+    #football{
+        width: 45px;
+        right: 355px;
+        top: 155px;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .upcoming-match{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
