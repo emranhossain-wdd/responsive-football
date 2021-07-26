@@ -211,16 +211,29 @@ footer img{
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
     }
+    .top-banner h1{
+        line-height: 1.2;
+    }
+    .banner-text-area{
+        text-align: center;
+    }
     #player-kick{
         width: 400px;
+        right: -5px;
     }
     #football{
         width: 45px;
-        right: 355px;
+        right: 320px;
         top: 155px;
     }
     .images{
         flex-direction: column;
+    }
+    .highlight-text-area{
+        text-align: center;
+    }
+    .highlights p{
+        margin-right: 0;
     }
     .highlights img{
         padding-top: 20px;
@@ -231,12 +244,15 @@ footer img{
     }
 }
 /* tablet device */
-@media only screen and (max-width:992px) {
+@media only screen and (min-width:689px) and (max-width:992px) {
     main{
         align-items: center;
     }
     .container{
         width: 100%;
+    }
+    .banner-text-area{
+        text-align: center;
     }
     #player-kick{
         width: 400px;
@@ -249,9 +265,17 @@ footer img{
     .players{
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
+        column-gap: 30px;
+    }
+    .highlight-text-area{
+        text-align: center;
+    }
+    .highlights p{
+        margin-right: 5px;;
     }
     .upcoming-match{
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
+        padding: 100px 40px;
     }
 }
